@@ -1,0 +1,1090 @@
+✓ Vector database initialized at ./chroma_db
+
+[1/1] Processing project: /Users/d0s08hk/Documents/GitHub/oms-common
+Discovering Java files in /Users/d0s08hk/Documents/GitHub/oms-common...
+Found 16 Java file(s) (after exclusions)
+  ✗ Error storing batch in vector DB: Expected IDs to be unique, found duplicates of: b71ae85cf0dbafaed262a7a14b02eae4 in add.
+  ⚠ No mappings stored (failed to generate embeddings for 5 mapping(s))
+  ✗ Error storing batch in vector DB: Expected IDs to be unique, found duplicates of: 8d9bc33fa3cade9db9ea47b1b13768f4, 3f83a5ea472f4f6b232ac9e5bdebbb42 in add.
+  ⚠ No mappings stored (failed to generate embeddings for 6 mapping(s))
+  ✗ Error storing batch in vector DB: Expected IDs to be unique, found duplicates of: 1520a9924c2e1bac9ef22f3dc0273663 in add.
+  ⚠ No mappings stored (failed to generate embeddings for 26 mapping(s))
+
+================================================================================
+MAPPING EXTRACTION RESULTS
+================================================================================
+
+{
+  "files_processed": 16,
+  "results": [
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/updateorder/util/OrderModificationConstants.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/util/CommonUtils.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/util/BaseListener.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/util/PaymentTypeValidation.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/util/OrderLineTypeUtil.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/util/MetricUtils.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/salesorder/inbound/PurchaseContractValidator.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/salesorder/inbound/mapper/OrderLineMapper.java",
+      "mappings": [
+        {
+          "type": "pojo",
+          "source_type": "t",
+          "target_type": "void",
+          "field_mappings": [
+            {
+              "source_field": "isDelayedReschedule",
+              "target_field": "isDelayedReschedule"
+            }
+          ],
+          "embedding_context": "Mapping from t to void with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "e",
+          "target_type": "void",
+          "field_mappings": [
+            {
+              "source_field": "quantity",
+              "target_field": "quantity"
+            }
+          ],
+          "embedding_context": "Mapping from e to void with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "e",
+          "target_type": "void",
+          "field_mappings": [
+            {
+              "source_field": "quantity",
+              "target_field": "quantity"
+            }
+          ],
+          "embedding_context": "Mapping from e to void with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "l",
+          "target_type": "FulfillmentDetail",
+          "field_mappings": [
+            {
+              "source_field": "dispenseType",
+              "target_field": "dispenseType"
+            },
+            {
+              "source_field": "doorStepTime",
+              "target_field": "doorStepTime"
+            },
+            {
+              "source_field": "vanId",
+              "target_field": "vanId"
+            },
+            {
+              "source_field": "vehicleDepartureTime",
+              "target_field": "vehicleDepartureDateTime"
+            }
+          ],
+          "embedding_context": "Mapping from l to FulfillmentDetail with 4 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "o",
+          "target_type": "void",
+          "field_mappings": [
+            {
+              "source_field": "serviceProvider",
+              "target_field": "serviceProvider"
+            }
+          ],
+          "embedding_context": "Mapping from o to void with 1 field mappings",
+          "has_embedding": true
+        }
+      ],
+      "summary": {
+        "total_mappings": 5,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 5
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/salesorder/inbound/mapper/OrderLineMapperHelper.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/salesorder/inbound/mapper/PurchaseContractToSalesOrderMapper.java",
+      "mappings": [
+        {
+          "type": "pojo",
+          "source_type": "o",
+          "target_type": "ClinicInfo",
+          "field_mappings": [
+            {
+              "source_field": "clinicName",
+              "target_field": "name"
+            },
+            {
+              "source_field": "phone",
+              "target_field": "phone"
+            }
+          ],
+          "embedding_context": "Mapping from o to ClinicInfo with 2 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "o",
+          "target_type": "ClinicInfo",
+          "field_mappings": [
+            {
+              "source_field": "clinicName",
+              "target_field": "name"
+            },
+            {
+              "source_field": "phone",
+              "target_field": "phone"
+            },
+            {
+              "source_field": "prescriberName",
+              "target_field": "prescriberName"
+            }
+          ],
+          "embedding_context": "Mapping from o to ClinicInfo with 3 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "r",
+          "target_type": "void",
+          "field_mappings": [
+            {
+              "source_field": "orderNo",
+              "target_field": "referenceId"
+            }
+          ],
+          "embedding_context": "Mapping from r to void with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "o",
+          "target_type": "ClinicInfo",
+          "field_mappings": [
+            {
+              "source_field": "clinicName",
+              "target_field": "name"
+            },
+            {
+              "source_field": "phone",
+              "target_field": "phone"
+            }
+          ],
+          "embedding_context": "Mapping from o to ClinicInfo with 2 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "o",
+          "target_type": "ClinicInfo",
+          "field_mappings": [
+            {
+              "source_field": "clinicName",
+              "target_field": "name"
+            },
+            {
+              "source_field": "phone",
+              "target_field": "phone"
+            },
+            {
+              "source_field": "prescriberName",
+              "target_field": "prescriberName"
+            }
+          ],
+          "embedding_context": "Mapping from o to ClinicInfo with 3 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "r",
+          "target_type": "void",
+          "field_mappings": [
+            {
+              "source_field": "orderNo",
+              "target_field": "referenceId"
+            }
+          ],
+          "embedding_context": "Mapping from r to void with 1 field mappings",
+          "has_embedding": true
+        }
+      ],
+      "summary": {
+        "total_mappings": 6,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 6
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/salesorder/inbound/constant/SalesOrderInboundConstant.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/createorder/util/OrderUtil.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/createorder/mapper/mapstruct/OrderDtoToCommonModelMapperUtils.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/createorder/mapper/util/TaxCategory.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/createorder/mapper/util/CreateOrderConstants.java",
+      "mappings": [],
+      "summary": {
+        "total_mappings": 0,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 0
+      }
+    },
+    {
+      "file": "/Users/d0s08hk/Documents/GitHub/oms-common/oms-biz/src/main/java/com/walmart/cp/oms/biz/common/order/CommonOrderToSalesOrderMapper.java",
+      "mappings": [
+        {
+          "type": "pojo",
+          "source_type": "o",
+          "target_type": "Status",
+          "field_mappings": [
+            {
+              "source_field": "isDelayed",
+              "target_field": "isDelayed"
+            },
+            {
+              "source_field": "statusCode",
+              "target_field": "code"
+            },
+            {
+              "source_field": "statusChangeDate",
+              "target_field": "changeDate"
+            },
+            {
+              "source_field": "statusDescription",
+              "target_field": "description"
+            },
+            {
+              "source_field": "referenceType",
+              "target_field": "referenceType"
+            },
+            {
+              "source_field": "delayedReason",
+              "target_field": "delayedReason"
+            },
+            {
+              "source_field": "cancelReasonCode",
+              "target_field": "reasonCode"
+            },
+            {
+              "source_field": "referenceId",
+              "target_field": "referenceId"
+            },
+            {
+              "source_field": "distributorType",
+              "target_field": "distributorType"
+            }
+          ],
+          "embedding_context": "Mapping from o to Status with 9 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "o",
+          "target_type": "AccessPoint",
+          "field_mappings": [
+            {
+              "source_field": "locationId",
+              "target_field": "locationId"
+            }
+          ],
+          "embedding_context": "Mapping from o to AccessPoint with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "d",
+          "target_type": "PaymentMethod",
+          "field_mappings": [
+            {
+              "source_field": "isInstrumentValid",
+              "target_field": "isValid"
+            },
+            {
+              "source_field": "paymentReferenceId",
+              "target_field": "id"
+            },
+            {
+              "source_field": "paymentType",
+              "target_field": "paymentType"
+            },
+            {
+              "source_field": "payByDate",
+              "target_field": "payByDate"
+            },
+            {
+              "source_field": "paymentHandle",
+              "target_field": "paymentHandle"
+            },
+            {
+              "source_field": "last4DigitsOfCard",
+              "target_field": "last4DigitsOfCard"
+            },
+            {
+              "source_field": "fundingProgram",
+              "target_field": "fundingProgram"
+            },
+            {
+              "source_field": "paymentReferenceId",
+              "target_field": "paymentReferenceId"
+            },
+            {
+              "source_field": "pmId",
+              "target_field": "cardType"
+            },
+            {
+              "source_field": "piHash",
+              "target_field": "cardNo"
+            },
+            {
+              "source_field": "paymentGateway",
+              "target_field": "paymentGateway"
+            },
+            {
+              "source_field": "maxChargeLimit",
+              "target_field": "maxChargeLimit"
+            },
+            {
+              "source_field": "cardName",
+              "target_field": "cardName"
+            },
+            {
+              "source_field": "paymentPreferenceId",
+              "target_field": "paymentPreferenceId"
+            },
+            {
+              "source_field": "isAuthDeferred",
+              "target_field": "isAuthDeferred"
+            },
+            {
+              "source_field": "cardImageUrl",
+              "target_field": "cardImageUrl"
+            },
+            {
+              "source_field": "shared",
+              "target_field": "isShared"
+            },
+            {
+              "source_field": "approvalCode",
+              "target_field": "approvalCode"
+            },
+            {
+              "source_field": "billingAgreement",
+              "target_field": "isBillingAgreement"
+            },
+            {
+              "source_field": "clientReqId",
+              "target_field": "clientReqId"
+            },
+            {
+              "source_field": "financingName",
+              "target_field": "financingName"
+            },
+            {
+              "source_field": "cardBalanceDate",
+              "target_field": "balanceDateTime"
+            },
+            {
+              "source_field": "wicFundsExpiry",
+              "target_field": "wicFundsExpiry"
+            },
+            {
+              "source_field": "allocatedQuantity",
+              "target_field": "allocatedQuantity"
+            },
+            {
+              "source_field": "allocatedQuantityValue",
+              "target_field": "allocatedQuantityValue"
+            },
+            {
+              "source_field": "allocatedCashValue",
+              "target_field": "allocatedCashValue"
+            },
+            {
+              "source_field": "balanceUpdatedTs",
+              "target_field": "balanceUpdatedTs"
+            },
+            {
+              "source_field": "paymentTokenSource",
+              "target_field": "paymentTokenSource"
+            }
+          ],
+          "embedding_context": "Mapping from d to PaymentMethod with 28 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "e",
+          "target_type": "CredentialOnFile",
+          "field_mappings": [
+            {
+              "source_field": "initiationIndicator",
+              "target_field": "initiationIndicator"
+            },
+            {
+              "source_field": "scheduleIndicator",
+              "target_field": "scheduleIndicator"
+            },
+            {
+              "source_field": "storedCredentialIndicator",
+              "target_field": "storedCredentialIndicator"
+            },
+            {
+              "source_field": "typeIndicator",
+              "target_field": "typeIndicator"
+            }
+          ],
+          "embedding_context": "Mapping from e to CredentialOnFile with 4 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "a",
+          "target_type": "InstrumentMetaData",
+          "field_mappings": [
+            {
+              "source_field": "issuedAgency",
+              "target_field": "issuedAgency"
+            },
+            {
+              "source_field": "piSource",
+              "target_field": "piSource"
+            }
+          ],
+          "embedding_context": "Mapping from a to InstrumentMetaData with 2 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "e",
+          "target_type": "ItemCatalogAttributes",
+          "field_mappings": [
+            {
+              "source_field": "isAnchor",
+              "target_field": "isAnchor"
+            }
+          ],
+          "embedding_context": "Mapping from e to ItemCatalogAttributes with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "y",
+          "target_type": "TransactionSummary",
+          "field_mappings": [
+            {
+              "source_field": "transactionType",
+              "target_field": "transactionType"
+            },
+            {
+              "source_field": "transactionType",
+              "target_field": "transactionType"
+            }
+          ],
+          "embedding_context": "Mapping from y to TransactionSummary with 2 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "o",
+          "target_type": "MembershipInfo",
+          "field_mappings": [
+            {
+              "source_field": "id",
+              "target_field": "id"
+            },
+            {
+              "source_field": "membershipTier",
+              "target_field": "membershipTier"
+            }
+          ],
+          "embedding_context": "Mapping from o to MembershipInfo with 2 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "m",
+          "target_type": "MemberProgram",
+          "field_mappings": [
+            {
+              "source_field": "name",
+              "target_field": "name"
+            },
+            {
+              "source_field": "membershipStatus",
+              "target_field": "membershipStatus"
+            },
+            {
+              "source_field": "benefits",
+              "target_field": "benefits"
+            }
+          ],
+          "embedding_context": "Mapping from m to MemberProgram with 3 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "r",
+          "target_type": "SalesOrder",
+          "field_mappings": [
+            {
+              "source_field": "orderTaxId",
+              "target_field": "taxid"
+            },
+            {
+              "source_field": "tenantId",
+              "target_field": "tennantId"
+            },
+            {
+              "source_field": "martId",
+              "target_field": "martId"
+            },
+            {
+              "source_field": "orderDate",
+              "target_field": "orderDate"
+            },
+            {
+              "source_field": "orderNo",
+              "target_field": "orderNo"
+            },
+            {
+              "source_field": "isSameDayOrder",
+              "target_field": "isSameDayOrder"
+            },
+            {
+              "source_field": "verticalId",
+              "target_field": "verticalId"
+            },
+            {
+              "source_field": "originSystemOrderId",
+              "target_field": "externalOrderNo"
+            },
+            {
+              "source_field": "contractId",
+              "target_field": "purchaseContractId"
+            },
+            {
+              "source_field": "orderNo",
+              "target_field": "customerPONo"
+            },
+            {
+              "source_field": "orderDate",
+              "target_field": "submittedDate"
+            },
+            {
+              "source_field": "orderPurpose",
+              "target_field": "orderPurpose"
+            },
+            {
+              "source_field": "purpose",
+              "target_field": "orderPurpose"
+            },
+            {
+              "source_field": "miscAttributes",
+              "target_field": "miscAttributes"
+            },
+            {
+              "source_field": "orderTenantId",
+              "target_field": "orderTenantId"
+            }
+          ],
+          "embedding_context": "Mapping from r to SalesOrder with 15 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "y",
+          "target_type": "Resiliency",
+          "field_mappings": [
+            {
+              "source_field": "resiliencyType",
+              "target_field": "resiliencyType"
+            },
+            {
+              "source_field": "resilientModes",
+              "target_field": "resilientModes"
+            }
+          ],
+          "embedding_context": "Mapping from y to Resiliency with 2 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "e",
+          "target_type": "Charge",
+          "field_mappings": [
+            {
+              "source_field": "unitTransactionId",
+              "target_field": "id"
+            },
+            {
+              "source_field": "chargeName",
+              "target_field": "name"
+            },
+            {
+              "source_field": "beneficiaryId",
+              "target_field": "beneficiaryId"
+            },
+            {
+              "source_field": "beneficiaryName",
+              "target_field": "beneficiaryName"
+            },
+            {
+              "source_field": "isBillable",
+              "target_field": "isBillable"
+            },
+            {
+              "source_field": "isDiscount",
+              "target_field": "isDiscount"
+            },
+            {
+              "source_field": "tipId",
+              "target_field": "tipId"
+            },
+            {
+              "source_field": "sellerId",
+              "target_field": "sellerId"
+            }
+          ],
+          "embedding_context": "Mapping from e to Charge with 8 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "n",
+          "target_type": "Promotion",
+          "field_mappings": [
+            {
+              "source_field": "promotionId",
+              "target_field": "promoId"
+            },
+            {
+              "source_field": "name",
+              "target_field": "name"
+            },
+            {
+              "source_field": "sequence",
+              "target_field": "sequence"
+            },
+            {
+              "source_field": "description",
+              "target_field": "description"
+            },
+            {
+              "source_field": "discountType",
+              "target_field": "promoType"
+            },
+            {
+              "source_field": "offerMetaData",
+              "target_field": "offerMetaData"
+            }
+          ],
+          "embedding_context": "Mapping from n to Promotion with 6 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "d",
+          "target_type": "Award",
+          "field_mappings": [
+            {
+              "source_field": "awardSponsors",
+              "target_field": "sponsors"
+            },
+            {
+              "source_field": "awardType",
+              "target_field": "type"
+            },
+            {
+              "source_field": "description",
+              "target_field": "description"
+            },
+            {
+              "source_field": "name",
+              "target_field": "name"
+            },
+            {
+              "source_field": "applicableTo",
+              "target_field": "applicableTo"
+            }
+          ],
+          "embedding_context": "Mapping from d to Award with 5 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "r",
+          "target_type": "OrderLine",
+          "field_mappings": [
+            {
+              "source_field": "verticalId",
+              "target_field": "verticalId"
+            }
+          ],
+          "embedding_context": "Mapping from r to OrderLine with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "s",
+          "target_type": "GiftCardDetails",
+          "field_mappings": [
+            {
+              "source_field": "giftMessage",
+              "target_field": "giftMessage"
+            },
+            {
+              "source_field": "senderName",
+              "target_field": "senderName"
+            }
+          ],
+          "embedding_context": "Mapping from s to GiftCardDetails with 2 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "o",
+          "target_type": "RefillInfo",
+          "field_mappings": [
+            {
+              "source_field": "id",
+              "target_field": "id"
+            },
+            {
+              "source_field": "idType",
+              "target_field": "idType"
+            },
+            {
+              "source_field": "storeId",
+              "target_field": "storeId"
+            },
+            {
+              "source_field": "refillQty",
+              "target_field": "refillQty"
+            },
+            {
+              "source_field": "refillsLeft",
+              "target_field": "refillsLeft"
+            }
+          ],
+          "embedding_context": "Mapping from o to RefillInfo with 5 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "t",
+          "target_type": "Weight",
+          "field_mappings": [
+            {
+              "source_field": "measurementValue",
+              "target_field": "measurementValue"
+            }
+          ],
+          "embedding_context": "Mapping from t to Weight with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "e",
+          "target_type": "BundleInfo",
+          "field_mappings": [
+            {
+              "source_field": "isAnchor",
+              "target_field": "isAnchor"
+            }
+          ],
+          "embedding_context": "Mapping from e to BundleInfo with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "e",
+          "target_type": "LineAttributes",
+          "field_mappings": [
+            {
+              "source_field": "isPreOrder",
+              "target_field": "isPreorder"
+            }
+          ],
+          "embedding_context": "Mapping from e to LineAttributes with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "s",
+          "target_type": "Wireless",
+          "field_mappings": [
+            {
+              "source_field": "phoneNumber",
+              "target_field": "phoneNumber"
+            },
+            {
+              "source_field": "planId",
+              "target_field": "planId"
+            },
+            {
+              "source_field": "autoRefill",
+              "target_field": "autoRefill"
+            }
+          ],
+          "embedding_context": "Mapping from s to Wireless with 3 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "e",
+          "target_type": "Item",
+          "field_mappings": [
+            {
+              "source_field": "extnWtxCode",
+              "target_field": "wtxCode"
+            },
+            {
+              "source_field": "productType",
+              "target_field": "productType"
+            },
+            {
+              "source_field": "rootItemCategory",
+              "target_field": "productCategory"
+            },
+            {
+              "source_field": "productPtFamily",
+              "target_field": "productPtFamily"
+            }
+          ],
+          "embedding_context": "Mapping from e to Item with 4 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "e",
+          "target_type": "Hold",
+          "field_mappings": [
+            {
+              "source_field": "holdTypeName",
+              "target_field": "holdType"
+            },
+            {
+              "source_field": "holdReasonCode",
+              "target_field": "reasonCode"
+            },
+            {
+              "source_field": "holdStatusDate",
+              "target_field": "statusChangeDate"
+            }
+          ],
+          "embedding_context": "Mapping from e to Hold with 3 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "r",
+          "target_type": "AffiliateInfo",
+          "field_mappings": [
+            {
+              "source_field": "affiliateId",
+              "target_field": "affiliateId"
+            }
+          ],
+          "embedding_context": "Mapping from r to AffiliateInfo with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "d",
+          "target_type": "PaymentDetail",
+          "field_mappings": [
+            {
+              "source_field": "authorizationExpiry",
+              "target_field": "authorizationExpirationDate"
+            }
+          ],
+          "embedding_context": "Mapping from d to PaymentDetail with 1 field mappings",
+          "has_embedding": true
+        },
+        {
+          "type": "pojo",
+          "source_type": "r",
+          "target_type": "SalesOrder",
+          "field_mappings": [
+            {
+              "source_field": "orderTaxId",
+              "target_field": "taxid"
+            },
+            {
+              "source_field": "tenantId",
+              "target_field": "tennantId"
+            },
+            {
+              "source_field": "martId",
+              "target_field": "martId"
+            },
+            {
+              "source_field": "orderDate",
+              "target_field": "orderDate"
+            },
+            {
+              "source_field": "orderNo",
+              "target_field": "orderNo"
+            },
+            {
+              "source_field": "isSameDayOrder",
+              "target_field": "isSameDayOrder"
+            },
+            {
+              "source_field": "verticalId",
+              "target_field": "verticalId"
+            },
+            {
+              "source_field": "originSystemOrderId",
+              "target_field": "externalOrderNo"
+            },
+            {
+              "source_field": "contractId",
+              "target_field": "purchaseContractId"
+            },
+            {
+              "source_field": "orderNo",
+              "target_field": "customerPONo"
+            },
+            {
+              "source_field": "orderDate",
+              "target_field": "submittedDate"
+            },
+            {
+              "source_field": "orderPurpose",
+              "target_field": "orderPurpose"
+            },
+            {
+              "source_field": "purpose",
+              "target_field": "orderPurpose"
+            },
+            {
+              "source_field": "miscAttributes",
+              "target_field": "miscAttributes"
+            },
+            {
+              "source_field": "orderTenantId",
+              "target_field": "orderTenantId"
+            }
+          ],
+          "embedding_context": "Mapping from r to SalesOrder with 15 field mappings",
+          "has_embedding": true
+        }
+      ],
+      "summary": {
+        "total_mappings": 26,
+        "mapstruct_mappings": 0,
+        "pojo_mappings": 26
+      }
+    }
+  ],
+  "summary": {
+    "total_mappings": 37,
+    "mapstruct_mappings": 0,
+    "pojo_mappings": 37
+  }
+}

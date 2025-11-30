@@ -1,0 +1,113 @@
+# Configuration for AI Code Understanding System
+input:
+  # Multiple project paths (up to 10 projects)
+  # Can specify single project or multiple projects
+  projects:
+    - "/Users/d0s08hk/Documents/GitHub/oms-common"
+    - "/Users/d0s08hk/Documents/GitHub/pg-oms"
+  # Legacy single codebase path (for backward compatibility)
+  # If projects list is empty, this will be used
+  codebase_path: ""
+  # File extensions to process
+  file_extensions: [".java"]
+  # Whether to process recursively
+  recursive: true
+  # Auto-process codebase on startup (for UI)
+  auto_process: false
+  # Folders/directories to exclude from processing
+  exclude_patterns:
+    - "**/src/test/**"
+    - "**/target/**"
+    - "**/build/**"
+    - "**/node_modules/**"
+    - "**/.git/**"
+    - "**/src/main/resources/**"
+    - "**/*Test.java"
+    - "**/*Tests.java"
+  # Batch size for embedding processing (for large codebases)
+  embedding_batch_size: 50
+  # Number of parallel workers for processing files (0 = auto-detect)
+  parallel_workers: 4
+  # Number of parallel workers for embedding generation (within each file's chunks)
+  # Balance: 3-4 provides good throughput without overwhelming Ollama
+  embedding_parallel_workers: 3
+  # Maximum concurrent embedding requests to Ollama (prevents crashes)
+  # 3-4 concurrent requests is usually safe for most systems
+  max_concurrent_embedding_requests: 3
+  # Chunk size for processing files (process in chunks to manage memory)
+  # For 30k+ files, use 1000-5000
+  file_chunk_size: 1000
+  # Enable checkpoint/resume (saves progress periodically)
+  enable_checkpoint: true
+  # Checkpoint interval (save every N files)
+  checkpoint_interval: 500
+
+mapping:
+  # Types of mappings to detect
+  types:
+    - mapstruct
+    - pojo
+  # MapStruct annotation patterns
+  mapstruct_annotations:
+    - "@Mapper"
+    - "@Mapping"
+    - "@Mappings"
+  # POJO mapping patterns (method names)
+  pojo_patterns:
+    - "map"
+    - "convert"
+    - "transform"
+    - "to"
+
+embeddings:
+  # Ollama model name
+  # Recommended models: nomic-embed-text, all-minilm, mxbai-embed-large
+  # nomic-embed-text is recommended for code embeddings and is more stable than Jina
+  model: "nomic-embed-text"
+  # Ollama base URL
+  base_url: "http://localhost:11434"
+  # Whether to use embeddings for enhanced understanding
+  enabled: true
+  # Context window size
+  context_window: 8192
+  # Extract mappings during ingestion (false = extract on-demand from retrieved code)
+  extract_mappings_on_ingestion: false
+
+vector_db:
+  # Whether to use vector database for storing embeddings
+  enabled: true
+  # Directory to persist vector database
+  persist_directory: "./chroma_db"
+  # Collection name for mappings
+  collection_name: "code_mappings"
+  # Collection name for full code files
+  code_collection_name: "code_files"
+  # Whether to store embeddings when processing
+  store_on_process: true
+  # Whether to store full code files (entire codebase embedding)
+  store_full_code: true
+  # Whether to search for similar mappings
+  enable_similarity_search: true
+  # Maximum code chunk size for embedding (characters)
+  # Large files will be split into chunks
+  # Note: Jina embeddings model has issues with large chunks, so 2000 is recommended
+  max_code_chunk_size: 2000
+
+llm:
+  # LLM model for RAG (Q&A)
+  model: "qwen2.5-coder:7b"
+  # Ollama base URL (same as embeddings)
+  base_url: "http://localhost:11434"
+  # Number of retrievals for RAG
+  n_retrievals: 5
+  # Enable streaming responses
+  streaming: true
+
+output:
+  # Output format
+  format: "json"  # json, yaml, or text
+  # Output file path (optional, if empty prints to stdout)
+  output_path: ""
+  # Include code snippets in output
+  include_code_snippets: true
+
